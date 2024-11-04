@@ -1,56 +1,31 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f8f9fa;
 }
 
 header {
-    background: #4CAF50;
+    background: #4CAF50; /* Use the brand color */
     color: #fff;
-    padding: 10px 20px;
-    text-align: center;
 }
 
 nav {
-    background: #333;
-    color: #fff;
-    padding: 10px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-main {
-    padding: 20px;
-}
-
-section {
     margin-bottom: 20px;
-    padding: 15px;
-    background: #fff;
-    border: 1px solid #ccc;
+}
+
+h2 {
+    color: #4CAF50; /* Section title color */
+}
+
+ul {
+    list-style: disc;
+    margin-left: 20px;
 }
 
 footer {
     text-align: center;
-    padding: 10px;
     background: #333;
     color: #fff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
