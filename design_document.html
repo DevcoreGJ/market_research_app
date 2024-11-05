@@ -1,159 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Market Research App - Design Document</title>
+    <title>Market Research App Design Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <!-- Navbar placeholder -->
-    <div id="navbar-container"></div>
-    <header class="bg-light text-center py-3">
-        <h1>Market Research App</h1>
-        <h2>Design Document</h2>
+    <header>
+        <nav id="navbar-container"></nav> <!-- Use a script to load the navbar -->
     </header>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item"><a class="nav-link" href="#introduction">Introduction</a></li>
-                <li class="nav-item"><a class="nav-link" href="#requirements">Requirements</a></li>
-                <li class="nav-item"><a class="nav-link" href="#architecture">Architecture</a></li>
-                <li class="nav-item"><a class="nav-link" href="#functionality">Functionality</a></li>
-                <li class="nav-item"><a class="nav-link" href="#user-interface-design">User Interface Design</a></li>
-                <li class="nav-item"><a class="nav-link" href="#testing-strategy">Testing Strategy</a></li>
-                <li class="nav-item"><a class="nav-link" href="#deployment-plan">Deployment Plan</a></li>
-                <li class="nav-item"><a class="nav-link" href="#future-enhancements">Future Enhancements</a></li>
-                <li class="nav-item"><a class="nav-link" href="#project-management-plan">Project Management Plan</a></li>
-                <li class="nav-item"><a class="nav-link" href="#uiux-plan">UI/UX Plan</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <main class="container mt-4">
-        <h2 id="introduction">Introduction</h2>
-        <p><strong>Overview of the App and Its Objectives:</strong> The Market Research App aims to identify high-demand products by scraping data from platforms like eBay, Facebook Marketplace, and local classifieds. This app will provide users with insights into trending products, enabling them to make informed purchasing decisions.</p>
-
-        <h2 id="requirements">Requirements</h2>
-        <h4>Technical Requirements:</h4>
-        <ul>
-            <li><strong>Python</strong>: Programming language for backend development.</li>
-            <li><strong>Flask</strong>: Micro web framework to build the web application.</li>
-            <li><strong>Beautiful Soup</strong>: For web scraping and data extraction.</li>
-            <li><strong>Requests</strong>: To handle HTTP requests.</li>
-        </ul>
-        <h4>User Requirements:</h4>
-        <ul>
-            <li>User-friendly interface for easy navigation.</li>
-            <li>Quick access to trending product data.</li>
-            <li>Responsive design for mobile users.</li>
-        </ul>
-
-        <h2 id="architecture">Architecture</h2>
-        <h4>Overview of App Architecture:</h4>
-        <ul>
-            <li><strong>Backend Scraping Logic:</strong>
-                <ul>
-                    <li><code>ebay_scraper.py</code>: Scrapes data from eBay.</li>
-                    <li><code>facebook_scraper.py</code>: Scrapes data from Facebook Marketplace.</li>
-                </ul>
-            </li>
-            <li><strong>Frontend Interface:</strong>
-                <p>A Flask app serving a user-friendly web interface where users can input search terms and view results.</p>
-            </li>
-        </ul>
-
-        <h2 id="functionality">Functionality</h2>
-        <h4>Detailed Description of Each Feature:</h4>
+    
+    <div class="container">
+        <h1 class="mt-4">Market Research App Design Document</h1>
+        <h2 class="mt-4">Contents</h2>
         <ol>
-            <li><strong>Product Search</strong>: Users can enter a search term to find trending products.</li>
-            <li><strong>Data Display</strong>: Scraped data will be displayed in a clear and organized manner.</li>
-            <li><strong>Filtering Options</strong>: Users can filter results by category or price range.</li>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#requirements">Requirements</a></li>
+            <li><a href="#architecture">Architecture</a></li>
+            <li><a href="#functionality">Functionality</a></li>
+            <li><a href="#user-interface-design">User Interface Design</a></li>
+            <li><a href="#testing-strategy">Testing Strategy</a></li>
+            <li><a href="#deployment-plan">Deployment Plan</a></li>
+            <li><a href="#future-enhancements">Future Enhancements</a></li>
+            <li><a href="#project-management-plan">Project Management Plan</a></li>
+            <li><a href="#uiux-plan">UI/UX Plan</a></li>
+            <li><a href="#chatgpt-integration-strategies">ChatGPT Integration Strategies</a></li>
         </ol>
 
-        <h2 id="user-interface-design">User Interface Design</h2>
-        <h4>Mockups or Descriptions of UI Elements:</h4>
-        <ul>
-            <li><strong>Search Bar</strong>: Prominently placed at the top of the page for easy access.</li>
-            <li><strong>Results Display Area</strong>: Below the search bar, showing product names and prices in a grid format.</li>
-        </ul>
+        <section id="introduction" class="mt-4">
+            <h2>Introduction</h2>
+            <p>
+                <strong>Overview of ChatGPT's Role:</strong> ChatGPT can assist in various aspects of app development by providing insights, generating content, and enhancing user interactions through AI-driven responses.
+            </p>
+            <p>
+                This document outlines the design and functionality of the Market Research App, focusing on leveraging ChatGPT to improve user experience and efficiency.
+            </p>
+        </section>
 
-        <h2 id="testing-strategy">Testing Strategy</h2>
-        <h4>Outline of Testing Phases:</h4>
-        <ul>
-            <li><strong>Unit Tests</strong>: Test individual components (scrapers, data handling).</li>
-            <li><strong>Integration Tests</strong>: Ensure all parts work together as intended.</li>
-            <li><strong>User Acceptance Testing</strong>: Gather feedback from initial users to improve the app.</li>
-        </ul>
+        <section id="requirements" class="mt-4">
+            <h2>Requirements</h2>
+            <p><strong>How ChatGPT Can Help:</strong></p>
+            <ul>
+                <li><strong>Technical Documentation:</strong> Use ChatGPT to generate documentation that explains the app's architecture and components.</li>
+                <li><strong>Code Generation:</strong> Quickly generate boilerplate code for various app functionalities.</li>
+                <li><strong>User Requirements:</strong> Facilitate user requirement gathering sessions by suggesting questions and gathering feedback effectively.</li>
+            </ul>
+        </section>
 
-        <h2 id="deployment-plan">Deployment Plan</h2>
-        <h4>How the App Will Be Deployed and Maintained:</h4>
-        <ul>
-            <li>Host the app on platforms like Heroku or DigitalOcean.</li>
-            <li>Regularly update the scraping logic to adapt to changes on eBay and Facebook.</li>
-        </ul>
+        <section id="architecture" class="mt-4">
+            <h2>Architecture</h2>
+            <p>
+                The app will be designed using a microservices architecture to allow scalability and flexibility. Each service will handle different functionalities, ensuring a smooth user experience.
+            </p>
+        </section>
 
-        <h2 id="future-enhancements">Future Enhancements</h2>
-        <h4>Potential Features for Future Versions:</h4>
-        <ul>
-            <li>Historical price tracking for products.</li>
-            <li>User accounts for saving favorite searches and products.</li>
-            <li>Notifications for price drops or trending items.</li>
-        </ul>
+        <section id="functionality" class="mt-4">
+            <h2>Functionality</h2>
+            <p>
+                The app will provide users with various features, including data visualization, user feedback collection, and reporting tools, all powered by ChatGPT for intelligent data handling.
+            </p>
+        </section>
 
-        <h2 id="project-management-plan">Project Management Plan</h2>
-        <h4>1. Milestones:</h4>
-        <ul>
-            <li>Week 1: Complete initial scraping functionality.</li>
-            <li>Week 2: Develop the Flask app interface.</li>
-            <li>Week 3: Implement testing strategy and gather user feedback.</li>
-            <li>Week 4: Deploy the app and initiate marketing efforts.</li>
-        </ul>
-        <h4>2. Task Assignments:</h4>
-        <ul>
-            <li>Assign roles to team members based on expertise (development, testing, marketing).</li>
-            <li>Use project management tools like Trello or Asana to track progress.</li>
-        </ul>
+        <section id="user-interface-design" class="mt-4">
+            <h2>User Interface Design</h2>
+            <p>
+                The user interface will be designed to be intuitive and user-friendly, incorporating modern design principles and accessibility features.
+            </p>
+        </section>
 
-        <h2 id="uiux-plan">UI/UX Plan</h2>
-        <h4>1. Color Scheme:</h4>
-        <ul>
-            <li>Use a simple, modern color palette:</li>
-            <li>Primary Color: <span style="color: #4CAF50;">#4CAF50</span> (Green)</li>
-            <li>Secondary Color: <span style="color: #FFFFFF;">#FFFFFF</span> (White)</li>
-            <li>Accent Color: <span style="color: #FFC107;">#FFC107</span> (Amber)</li>
-        </ul>
-        <h4>2. Retention and Layout Specificity:</h4>
-        <ul>
-            <li>Use a mobile-first design approach.</li>
-            <li>Ensure buttons are large enough for easy tapping on mobile devices.</li>
-            <li>Maintain consistent spacing and margins for a clean layout.</li>
-        </ul>
-        <h4>3. UI Elements:</h4>
-        <ul>
-            <li><strong>Search Bar</strong>: Full-width, with rounded corners and a slight shadow.</li>
-            <li><strong>Product Cards</strong>: Display product image, title, and price with hover effects.</li>
-        </ul>
-        <h4>4. User Engagement:</h4>
-        <ul>
-            <li>Use tooltips to guide users on how to use features.</li>
-            <li>Implement feedback forms to collect user suggestions.</li>
-        </ul>
-    </main>
-  <!-- Bootstrap JS and dependencies -->
+        <section id="testing-strategy" class="mt-4">
+            <h2>Testing Strategy</h2>
+            <p>
+                A comprehensive testing strategy will be implemented, including unit testing, integration testing, and user acceptance testing (UAT) to ensure the app meets all requirements.
+            </p>
+        </section>
+
+        <section id="deployment-plan" class="mt-4">
+            <h2>Deployment Plan</h2>
+            <p>
+                The deployment will follow a CI/CD pipeline to facilitate regular updates and maintenance, ensuring that the app remains up to date with user needs and technology changes.
+            </p>
+        </section>
+
+        <section id="future-enhancements" class="mt-4">
+            <h2>Future Enhancements</h2>
+            <p>
+                Future enhancements may include additional analytics features, integration with third-party services, and improved AI capabilities through ChatGPT.
+            </p>
+        </section>
+
+        <section id="project-management-plan" class="mt-4">
+            <h2>Project Management Plan</h2>
+            <p>
+                The project will utilize Agile methodologies to adapt to changing requirements and promote collaboration among team members.
+            </p>
+        </section>
+
+        <section id="uiux-plan" class="mt-4">
+            <h2>UI/UX Plan</h2>
+            <p>
+                A dedicated UI/UX team will focus on user research and design iterations to ensure the app meets user expectations and enhances satisfaction.
+            </p>
+        </section>
+
+        <section id="chatgpt-integration-strategies" class="mt-4">
+            <h2>ChatGPT Integration Strategies</h2>
+            <p>
+                Strategies for integrating ChatGPT include using its API for real-time responses, generating personalized content for users, and providing suggestions based on user interactions.
+            </p>
+        </section>
+
+        <footer>
+            <script src="loadFooter.js"></script> <!-- Load footer -->
+        </footer>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <!-- Load Navbar script -->
-    <script src="loadNavbar.js"></script>
-        <!-- Load the footer -->
-    <script src="loadFooter.js"></script>
-
+    <script src="loadNavbar.js"></script> <!-- Load navbar script -->
 </body>
-
 </html>
