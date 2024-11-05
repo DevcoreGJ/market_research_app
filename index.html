@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to the Market Research App</title>
-    
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav id="navbar-container"></nav> <!-- Script will load the navbar here -->
+        <nav id="navbar-container">
+            <!-- Script to load the navbar content -->
+            <script src="loadNavbar.js"></script>
+        </nav>
     </header>
 
     <div class="container text-center">
@@ -60,11 +61,11 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="loadNavbar.js"defer ></script> <!-- Load navbar script -->
 
     <footer class="text-center mt-5">
         <p>&copy; 2024 Market Research App. All rights reserved.</p>
-        <script src="loadFooter.js"></script> <!-- Load footer -->
+        <!-- Load footer script directly in the footer -->
+        <script src="loadFooter.js"></script>
     </footer>
 </body>
 </html>
