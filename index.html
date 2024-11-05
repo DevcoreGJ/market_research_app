@@ -17,7 +17,7 @@
     <div class="container text-center">
         <h1 class="mt-5">Welcome to the Market Research App!</h1>
         <p class="lead mt-3">Your one-stop solution for gathering, analyzing, and acting on market insights.</p>
-        <img src="images/market-research.jpg" alt="Market Research" class="img-fluid mt-4">
+        <img src="images/market-research.jpg" alt="Market Research" class="img-fluid mt-4" onerror="this.onerror=null; this.src='images/default.jpg';">
 
         <section class="mt-5">
             <h2>Why Choose Us?</h2>
@@ -64,10 +64,28 @@
     <footer class="text-center mt-5">
         <p>&copy; 2024 Market Research App. All rights reserved.</p>
         <!-- Load footer script directly in the footer -->
-        <script src="loadFooter.js"></script>
+        <script src="loadFooter.js" onerror="console.error('Failed to load footer script.');"></script>
     </footer>
 
     <!-- Load Navbar script at the end of the body -->
-    <script src="loadNavbar.js"></script>
+    <script src="loadNavbar.js" onerror="console.error('Failed to load navbar script.');"></script>
+    
+    <script>
+        // Check for essential elements
+        document.addEventListener("DOMContentLoaded", function () {
+            const navbarContainer = document.getElementById("navbar-container");
+            const img = document.querySelector("img[alt='Market Research']");
+
+            if (!navbarContainer) {
+                console.error("Navbar container not found in the document.");
+                alert("Error: Navbar is not available. Please refresh the page.");
+            }
+
+            if (!img) {
+                console.error("Market Research image not found.");
+                alert("Error: Image could not be loaded.");
+            }
+        });
+    </script>
 </body>
 </html>
