@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     console.log('Navbar loading script initialized.');
 
     // Load the navbar
-    fetch('navbar.html')
+    fetch("navbar.html")
         .then(response => {
             console.log('Fetch response status:', response.status);
             if (!response.ok) {
@@ -12,29 +12,31 @@ document.addEventListener("DOMContentLoaded", function() {
         })
         .then(data => {
             console.log('Navbar content loaded successfully.');
-            document.getElementById('navbar-container').innerHTML = data;
+            document.getElementById("navbar-container").innerHTML = data;
 
             // Initialize dark mode toggle
-            const darkModeToggle = document.getElementById('darkModeToggle');
+            const darkModeToggle = document.getElementById("darkModeToggle");
             if (darkModeToggle) { // Check if the toggle exists
-                darkModeToggle.addEventListener('change', function() {
-                    document.body.classList.toggle('dark-mode');
+                darkModeToggle.addEventListener("change", function() {
+                    document.body.classList.toggle("dark-mode");
                     if (darkModeToggle.checked) {
                         // Save preference in local storage
-                        localStorage.setItem('darkMode', 'enabled');
+                        localStorage.setItem("darkMode", "enabled");
                     } else {
-                        localStorage.removeItem('darkMode');
+                        localStorage.removeItem("darkMode");
                     }
                 });
 
                 // Check for saved dark mode preference
-                if (localStorage.getItem('darkMode') === 'enabled') {
+                if (localStorage.getItem("darkMode") === "enabled") {
                     darkModeToggle.checked = true;
-                    document.body.classList.add('dark-mode');
+                    document.body.classList.add("dark-mode");
                 }
             } else {
-                console.warn('Dark mode toggle not found in navbar.');
+                console.warn("Dark mode toggle not found in navbar.");
             }
         })
-        .catch(error => console.error('Error loading the navbar:', error));
+        .catch(error => {
+            console.error("Error loading the navbar:", error);
+        });
 });
