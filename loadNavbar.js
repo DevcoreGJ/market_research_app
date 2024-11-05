@@ -1,39 +1,40 @@
 document.addEventListener("DOMContentLoaded", function() {
-    console.log('Navbar loading script initialized.');
+    console.log('Loading navbar...');
 
-    // Load the navbar
     fetch('navbar.html')
         .then(response => {
-            console.log('Fetch response status:', response.status);
-            if (!response.ok) {
-                throw new Error('Network response was not ok: ' + response.statusText);
-            }
+            if (!response.ok) throw new Error('Network response was not ok');
             return response.text();
         })
         .then(data => {
-            console.log('Navbar content loaded successfully.');
             document.getElementById('navbar-container').innerHTML = data;
+            console.log("Navbar content loaded successfully.");
 
-            // Initialize dark mode toggle
-            const darkModeToggle = document.getElementById('darkModeToggle');
-            if (darkModeToggle) {
-                darkModeToggle.addEventListener('change', function() {
-                    document.body.classList.toggle('dark-mode');
-                    if (darkModeToggle.checked) {
-                        localStorage.setItem('darkMode', 'enabled');
-                    } else {
-                        localStorage.removeItem('darkMode');
-                    }
-                });
-
-                // Check for saved dark mode preference
-                if (localStorage.getItem('darkMode') === 'enabled') {
-                    darkModeToggle.checked = true;
-                    document.body.classList.add('dark-mode');
-                }
-            } else {
-                console.warn('Dark mode toggle not found in navbar.');
-            }
+            // Ensure dark mode toggle is set up only after navbar is fully loaded
+            initializeDarkModeToggle();
         })
-        .catch(error => console.error('Error loading the navbar:', error));
+        .catch(error => console.error('Error loading navbar:', error));
 });
+
+function initializeDarkModeToggle() {
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    if (darkModeToggle) {
+        console.log("Dark mode toggle found.");
+        darkModeToggle.addEventListener('change', function() {
+            document.body.classList.toggle('dark-mode');
+            if (darkModeToggle.checked) {
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                localStorage.removeItem('darkMode');
+            }
+        });
+
+        // Initialize toggle state based on saved preference
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            darkModeToggle.checked = true;
+            document.body.classList.add('dark-mode');
+        }
+    } else {
+        console.warn('Dark mode toggle not found in navbar.');
+    }
+}
