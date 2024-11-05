@@ -1,3 +1,4 @@
+/* Base styles */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -7,7 +8,7 @@ body {
 }
 
 header {
-    background: #4CAF50; /* Use the brand color */
+    background: #4CAF50; /* Brand color */
     color: #fff;
 }
 
@@ -15,8 +16,45 @@ nav {
     margin-bottom: 20px;
 }
 
+/* Navbar styles */
+.navbar {
+    padding: 0.5rem 1rem; /* Adjust padding for navbar */
+}
+
+.navbar-nav .nav-link {
+    color: #fff; /* Default link color */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #e7e7e7; /* Hover effect */
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text */
+}
+
+body.dark-mode h2 {
+    color: #90caf9; /* Lighter color for headings in dark mode */
+}
+
+.navbar-dark {
+    background-color: #343a40; /* Dark navbar background */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff; /* Light navbar text */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #e7e7e7; /* Light hover effect */
+}
+
+/* Section styles */
 h2 {
     color: #4CAF50; /* Section title color */
+    margin-top: 30px; /* Top margin for section titles */
 }
 
 ul {
@@ -24,10 +62,12 @@ ul {
     margin-left: 20px;
 }
 
+/* Footer styles */
 footer {
     background-color: #f8f8f8; /* Consistent footer color */
     padding: 20px;
     text-align: center;
+    border-top: 1px solid #e7e7e7; /* Subtle border at the top of the footer */
 }
 
 footer .footer-content ul {
@@ -48,19 +88,13 @@ footer .footer-content form {
     margin-top: 10px;
 }
 
-body.dark-mode {
-    background-color: #121212; /* Dark background */
-    color: #ffffff; /* Light text */
-}
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav {
+        margin-bottom: 15px; /* Less margin for smaller screens */
+    }
 
-.navbar-dark {
-    background-color: #343a40; /* Dark navbar background */
-}
-
-.navbar-dark .navbar-nav .nav-link {
-    color: #ffffff; /* Light navbar text */
-}
-
-.navbar-dark .navbar-nav .nav-link:hover {
-    color: #e7e7e7; /* Light hover effect */
+    h2 {
+        font-size: 1.5rem; /* Adjust font size for headings */
+    }
 }
