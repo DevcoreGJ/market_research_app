@@ -1,42 +1,67 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <!-- Links to sections in index.html -->
-                <li class="nav-item"><a class="nav-link" href="index.html#introduction">Introduction</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html#requirements">Requirements</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html#architecture">Architecture</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html#functionality">Functionality</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html#user-interface-design">User Interface Design</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html#testing-strategy">Testing Strategy</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html#deployment-plan">Deployment Plan</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html#future-enhancements">Future Enhancements</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html#project-management-plan">Project Management Plan</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html#uiux-plan">UI/UX Plan</a></li>
-                <!-- Dropdown for ChatGPT Integration Strategies -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">ChatGPT Integration Strategies</a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#chatgpt-integration-strategies">ChatGPT Integration Strategies</a></li>
-                        <li><a class="dropdown-item" href="#introduction">Introduction</a></li>
-                        <li><a class="dropdown-item" href="#requirements">Requirements</a></li>
-                        <li><a class="dropdown-item" href="#architecture">Architecture</a></li>
-                        <li><a class="dropdown-item" href="#functionality">Functionality</a></li>
-                        <li><a class="dropdown-item" href="#user-interface-design">User Interface Design</a></li>
-                        <li><a class="dropdown-item" href="#testing-strategy">Testing Strategy</a></li>
-                        <li><a class="dropdown-item" href="#deployment-plan">Deployment Plan</a></li>
-                        <li><a class="dropdown-item" href="#future-enhancements">Future Enhancements</a></li>
-                        <li><a class="dropdown-item" href="#project-management-plan">Project Management Plan</a></li>
-                        <li><a class="dropdown-item" href="#uiux-plan">UI/UX Plan</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="design_document.html">Design Document</a></li>
-                <li class="nav-item"><a class="nav-link" href="chatgpt_integration_plan.html">ChatGPT Integration Plan</a></li>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the Market Research App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar-container"></nav> <!-- Use a script to load the navbar -->
+    </header>
+
+    <div class="container text-center">
+        <h1 class="mt-5">Welcome to the Market Research App!</h1>
+        <p class="lead mt-3">Your one-stop solution for gathering, analyzing, and acting on market insights.</p>
+        <img src="images/market-research.jpg" alt="Market Research" class="img-fluid mt-4">
+
+        <section class="mt-5">
+            <h2>Why Choose Us?</h2>
+            <p class="mt-3">Here’s what makes our app stand out:</p>
+            <ul class="list-unstyled mt-3">
+                <li><strong>Intelligent Insights:</strong> Powered by AI to help you make data-driven decisions.</li>
+                <li><strong>User-Friendly Interface:</strong> Navigate seamlessly with our intuitive design.</li>
+                <li><strong>Real-Time Analytics:</strong> Get instant feedback and reports at your fingertips.</li>
+                <li><strong>Collaborative Features:</strong> Work with your team effortlessly and share insights.</li>
             </ul>
-            <div class="form-check form-switch ms-auto">
-                <input class="form-check-input" type="checkbox" id="darkModeToggle">
-                <label class="form-check-label" for="darkModeToggle">Dark Mode</label>
+        </section>
+
+        <section class="mt-5">
+            <h2>How It Works</h2>
+            <p class="mt-3">Our app is as easy as 1-2-3:</p>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <h3>1. Sign Up</h3>
+                    <p>Create your account in seconds and start your journey.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>2. Collect Data</h3>
+                    <p>Gather insights through surveys, polls, and feedback.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>3. Analyze & Act</h3>
+                    <p>Utilize our tools to turn data into actionable strategies.</p>
+                </div>
             </div>
-        </div>
+        </section>
+
+        <section class="mt-5">
+            <h2>Get Started Today!</h2>
+            <p class="mt-3">Ready to take your market research to the next level? <strong>Join us!</strong></p>
+            <a href="signup.html" class="btn btn-primary btn-lg mt-3">Sign Up Now</a>
+        </section>
     </div>
-</nav>
+
+    <footer class="text-center mt-5">
+        <p>&copy; 2024 Market Research App. All rights reserved.</p>
+        <script src="loadFooter.js"></script> <!-- Load footer -->
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="loadNavbar.js"></script> <!-- Load navbar script -->
+</body>
+</html>
