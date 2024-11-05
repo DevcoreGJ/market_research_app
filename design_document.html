@@ -7,119 +7,143 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <nav id="navbar-container"></nav> <!-- Use a script to load the navbar -->
-    </header>
-    
-    <div class="container">
-        <h1 class="mt-4">Market Research App Design Document</h1>
-        <h2 class="mt-4">Contents</h2>
-        <ol>
-            <li><a href="#introduction">Introduction</a></li>
-            <li><a href="#requirements">Requirements</a></li>
-            <li><a href="#architecture">Architecture</a></li>
-            <li><a href="#functionality">Functionality</a></li>
-            <li><a href="#user-interface-design">User Interface Design</a></li>
-            <li><a href="#testing-strategy">Testing Strategy</a></li>
-            <li><a href="#deployment-plan">Deployment Plan</a></li>
-            <li><a href="#future-enhancements">Future Enhancements</a></li>
-            <li><a href="#project-management-plan">Project Management Plan</a></li>
-            <li><a href="#uiux-plan">UI/UX Plan</a></li>
-            <li><a href="#chatgpt-integration-strategies">ChatGPT Integration Strategies</a></li>
-        </ol>
+<body data-spy="scroll" data-target="#navbar-container" data-offset="70">
 
-        <section id="introduction" class="mt-4">
-            <h2>Introduction</h2>
-            <p>
-                <strong>Overview of ChatGPT's Role:</strong> ChatGPT can assist in various aspects of app development by providing insights, generating content, and enhancing user interactions through AI-driven responses.
-            </p>
-            <p>
-                This document outlines the design and functionality of the Market Research App, focusing on leveraging ChatGPT to improve user experience and efficiency.
-            </p>
-        </section>
+<!-- Navbar (loaded with JavaScript) -->
+<header>
+    <nav id="navbar-container"></nav>
+</header>
 
-        <section id="requirements" class="mt-4">
-            <h2>Requirements</h2>
+<div class="container my-5">
+    <!-- Document Title -->
+    <h1 class="mt-4 text-center">Market Research App Design Document</h1>
+
+    <!-- Table of Contents with ScrollSpy -->
+    <h2 class="mt-4">Contents</h2>
+    <div class="list-group">
+        <a href="#introduction" class="list-group-item list-group-item-action">Introduction</a>
+        <a href="#requirements" class="list-group-item list-group-item-action">Requirements</a>
+        <a href="#architecture" class="list-group-item list-group-item-action">Architecture</a>
+        <a href="#functionality" class="list-group-item list-group-item-action">Functionality</a>
+        <a href="#user-interface-design" class="list-group-item list-group-item-action">User Interface Design</a>
+        <a href="#testing-strategy" class="list-group-item list-group-item-action">Testing Strategy</a>
+        <a href="#deployment-plan" class="list-group-item list-group-item-action">Deployment Plan</a>
+        <a href="#future-enhancements" class="list-group-item list-group-item-action">Future Enhancements</a>
+        <a href="#project-management-plan" class="list-group-item list-group-item-action">Project Management Plan</a>
+        <a href="#uiux-plan" class="list-group-item list-group-item-action">UI/UX Plan</a>
+        <a href="#chatgpt-integration-strategies" class="list-group-item list-group-item-action">ChatGPT Integration Strategies</a>
+    </div>
+
+    <!-- Document Sections -->
+    <section id="introduction" class="mt-4">
+        <h2>Introduction</h2>
+        <button class="btn btn-outline-primary mb-2" data-toggle="collapse" data-target="#introContent" aria-expanded="false" aria-controls="introContent">Toggle Content</button>
+        <div id="introContent" class="collapse show">
+            <p><strong>Overview of ChatGPT's Role:</strong> ChatGPT can assist in various aspects of app development by providing insights, generating content, and enhancing user interactions through AI-driven responses.</p>
+            <p>This document outlines the design and functionality of the Market Research App, focusing on leveraging ChatGPT to improve user experience and efficiency.</p>
+        </div>
+    </section>
+
+    <!-- Repeat the structure for each section -->
+    <section id="requirements" class="mt-4">
+        <h2>Requirements</h2>
+        <button class="btn btn-outline-primary mb-2" data-toggle="collapse" data-target="#requirementsContent" aria-expanded="false" aria-controls="requirementsContent">Toggle Content</button>
+        <div id="requirementsContent" class="collapse">
             <p><strong>How ChatGPT Can Help:</strong></p>
             <ul>
                 <li><strong>Technical Documentation:</strong> Use ChatGPT to generate documentation that explains the app's architecture and components.</li>
                 <li><strong>Code Generation:</strong> Quickly generate boilerplate code for various app functionalities.</li>
                 <li><strong>User Requirements:</strong> Facilitate user requirement gathering sessions by suggesting questions and gathering feedback effectively.</li>
             </ul>
-        </section>
+        </div>
+    </section>
 
-        <section id="architecture" class="mt-4">
-            <h2>Architecture</h2>
-            <p>
-                The app will be designed using a microservices architecture to allow scalability and flexibility. Each service will handle different functionalities, ensuring a smooth user experience.
-            </p>
-        </section>
+    <section id="architecture" class="mt-4">
+        <h2>Architecture</h2>
+        <button class="btn btn-outline-primary mb-2" data-toggle="collapse" data-target="#architectureContent" aria-expanded="false" aria-controls="architectureContent">Toggle Content</button>
+        <div id="architectureContent" class="collapse">
+            <p>The app will be designed using a microservices architecture to allow scalability and flexibility. Each service will handle different functionalities, ensuring a smooth user experience.</p>
+        </div>
+    </section>
 
-        <section id="functionality" class="mt-4">
-            <h2>Functionality</h2>
-            <p>
-                The app will provide users with various features, including data visualization, user feedback collection, and reporting tools, all powered by ChatGPT for intelligent data handling.
-            </p>
-        </section>
+    <section id="functionality" class="mt-4">
+        <h2>Functionality</h2>
+        <button class="btn btn-outline-primary mb-2" data-toggle="collapse" data-target="#functionalityContent" aria-expanded="false" aria-controls="functionalityContent">Toggle Content</button>
+        <div id="functionalityContent" class="collapse">
+            <p>The app will provide users with various features, including data visualization, user feedback collection, and reporting tools, all powered by ChatGPT for intelligent data handling.</p>
+        </div>
+    </section>
 
-        <section id="user-interface-design" class="mt-4">
-            <h2>User Interface Design</h2>
-            <p>
-                The user interface will be designed to be intuitive and user-friendly, incorporating modern design principles and accessibility features.
-            </p>
-        </section>
+    <section id="user-interface-design" class="mt-4">
+        <h2>User Interface Design</h2>
+        <button class="btn btn-outline-primary mb-2" data-toggle="collapse" data-target="#uiContent" aria-expanded="false" aria-controls="uiContent">Toggle Content</button>
+        <div id="uiContent" class="collapse">
+            <p>The user interface will be designed to be intuitive and user-friendly, incorporating modern design principles and accessibility features.</p>
+        </div>
+    </section>
 
-        <section id="testing-strategy" class="mt-4">
-            <h2>Testing Strategy</h2>
-            <p>
-                A comprehensive testing strategy will be implemented, including unit testing, integration testing, and user acceptance testing (UAT) to ensure the app meets all requirements.
-            </p>
-        </section>
+    <section id="testing-strategy" class="mt-4">
+        <h2>Testing Strategy</h2>
+        <button class="btn btn-outline-primary mb-2" data-toggle="collapse" data-target="#testingContent" aria-expanded="false" aria-controls="testingContent">Toggle Content</button>
+        <div id="testingContent" class="collapse">
+            <p>A comprehensive testing strategy will be implemented, including unit testing, integration testing, and user acceptance testing (UAT) to ensure the app meets all requirements.</p>
+        </div>
+    </section>
 
-        <section id="deployment-plan" class="mt-4">
-            <h2>Deployment Plan</h2>
-            <p>
-                The deployment will follow a CI/CD pipeline to facilitate regular updates and maintenance, ensuring that the app remains up to date with user needs and technology changes.
-            </p>
-        </section>
+    <section id="deployment-plan" class="mt-4">
+        <h2>Deployment Plan</h2>
+        <button class="btn btn-outline-primary mb-2" data-toggle="collapse" data-target="#deploymentContent" aria-expanded="false" aria-controls="deploymentContent">Toggle Content</button>
+        <div id="deploymentContent" class="collapse">
+            <p>The deployment will follow a CI/CD pipeline to facilitate regular updates and maintenance, ensuring that the app remains up to date with user needs and technology changes.</p>
+        </div>
+    </section>
 
-        <section id="future-enhancements" class="mt-4">
-            <h2>Future Enhancements</h2>
-            <p>
-                Future enhancements may include additional analytics features, integration with third-party services, and improved AI capabilities through ChatGPT.
-            </p>
-        </section>
+    <section id="future-enhancements" class="mt-4">
+        <h2>Future Enhancements</h2>
+        <button class="btn btn-outline-primary mb-2" data-toggle="collapse" data-target="#futureContent" aria-expanded="false" aria-controls="futureContent">Toggle Content</button>
+        <div id="futureContent" class="collapse">
+            <p>Future enhancements may include additional analytics features, integration with third-party services, and improved AI capabilities through ChatGPT.</p>
+        </div>
+    </section>
 
-        <section id="project-management-plan" class="mt-4">
-            <h2>Project Management Plan</h2>
-            <p>
-                The project will utilize Agile methodologies to adapt to changing requirements and promote collaboration among team members.
-            </p>
-        </section>
+    <section id="project-management-plan" class="mt-4">
+        <h2>Project Management Plan</h2>
+        <button class="btn btn-outline-primary mb-2" data-toggle="collapse" data-target="#pmContent" aria-expanded="false" aria-controls="pmContent">Toggle Content</button>
+        <div id="pmContent" class="collapse">
+            <p>The project will utilize Agile methodologies to adapt to changing requirements and promote collaboration among team members.</p>
+        </div>
+    </section>
 
-        <section id="uiux-plan" class="mt-4">
-            <h2>UI/UX Plan</h2>
-            <p>
-                A dedicated UI/UX team will focus on user research and design iterations to ensure the app meets user expectations and enhances satisfaction.
-            </p>
-        </section>
+    <section id="uiux-plan" class="mt-4">
+        <h2>UI/UX Plan</h2>
+        <button class="btn btn-outline-primary mb-2" data-toggle="collapse" data-target="#uiuxContent" aria-expanded="false" aria-controls="uiuxContent">Toggle Content</button>
+        <div id="uiuxContent" class="collapse">
+            <p>A dedicated UI/UX team will focus on user research and design iterations to ensure the app meets user expectations and enhances satisfaction.</p>
+        </div>
+    </section>
 
-        <section id="chatgpt-integration-strategies" class="mt-4">
-            <h2>ChatGPT Integration Strategies</h2>
-            <p>
-                Strategies for integrating ChatGPT include using its API for real-time responses, generating personalized content for users, and providing suggestions based on user interactions.
-            </p>
-        </section>
+    <section id="chatgpt-integration-strategies" class="mt-4">
+        <h2>ChatGPT Integration Strategies</h2>
+        <button class="btn btn-outline-primary mb-2" data-toggle="collapse" data-target="#chatgptContent" aria-expanded="false" aria-controls="chatgptContent">Toggle Content</button>
+        <div id="chatgptContent" class="collapse">
+            <p>Strategies for integrating ChatGPT include using its API for real-time responses, generating personalized content for users, and providing suggestions based on user interactions.</p>
+        </div>
+    </section>
+</div>
 
-        <footer>
-            <script src="loadFooter.js"></script> <!-- Load footer -->
-        </footer>
-    </div>
+<!-- Footer (loaded with JavaScript) -->
+<footer class="mt-5">
+    <div id="footer-container"></div>
+</footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="loadNavbar.js"></script> <!-- Load navbar script -->
+<!-- JS Libraries -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Custom JS for Navbar and Footer loading -->
+<script src="loadNavbar.js"></script>
+<script src="loadFooter.js"></script>
+
 </body>
 </html>
