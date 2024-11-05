@@ -25,29 +25,29 @@ ul {
 }
 
 footer {
-    text-align: center;
-    background: #333;
-    color: #fff;
-}
-footer {
-    background-color: #f8f8f8;
+    background-color: #f8f8f8; /* Consistent footer color */
     padding: 20px;
     text-align: center;
 }
+
 footer .footer-content ul {
     list-style-type: none;
     padding: 0;
 }
+
 footer .footer-content ul li {
     display: inline;
     margin: 0 10px;
 }
+
 footer .footer-content .social-media a {
     margin: 0 10px;
 }
+
 footer .footer-content form {
     margin-top: 10px;
 }
+
 body.dark-mode {
     background-color: #121212; /* Dark background */
     color: #ffffff; /* Light text */
