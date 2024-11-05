@@ -31,31 +31,32 @@
         
         <div class="newsletter-signup">
             <h3>Subscribe to our newsletter:</h3>
-            <form id="newsletter-signup" onsubmit="return validateEmail()">
+            <form id="newsletter-signup" action="https://formspree.io/f/manyoyyy" method="POST" onsubmit="return validateEmail()">
                 <label for="email" class="visually-hidden">Enter your email:</label>
                 <input type="email" id="email" name="email" placeholder="Enter your email" required>
                 <button type="submit">Subscribe</button>
                 <div id="error-message" style="color: red; display: none;"></div>
             </form>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfY7KPR_Ur-W9voYdZ9IumZ0XZxNAjPR3wT47D_JcjA4QWNjA/viewform?embedded=true" width="640" height="552" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </div>
     </div>
 </footer>
 
 <script>
-    function validateEmail() {
-        const emailInput = document.getElementById("email");
-        const errorMessage = document.getElementById("error-message");
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Simple email regex
+function validateEmail() {
+    const emailInput = document.getElementById('email');
+    const errorMessage = document.getElementById('error-message');
+    const email = emailInput.value;
 
-        if (!emailPattern.test(emailInput.value)) {
-            errorMessage.textContent = "Please enter a valid email address.";
-            errorMessage.style.display = "block";
-            return false; // Prevent form submission
-        }
+    // Simple regex for email validation
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-        errorMessage.style.display = "none"; // Clear previous error message
-        // Optionally handle form submission here if using AJAX or similar
-        return true; // Allow form submission
+    if (!regex.test(email)) {
+        errorMessage.innerText = "Please enter a valid email address.";
+        errorMessage.style.display = 'block';
+        return false; // Prevent form submission
     }
+
+    errorMessage.style.display = 'none'; // Hide error message
+    return true; // Allow form submission
+}
 </script>
