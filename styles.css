@@ -48,3 +48,19 @@ footer .footer-content .social-media a {
 footer .footer-content form {
     margin-top: 10px;
 }
+body.dark-mode {
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text */
+}
+
+.navbar-dark {
+    background-color: #343a40; /* Dark navbar background */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff; /* Light navbar text */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #e7e7e7; /* Light hover effect */
+}
